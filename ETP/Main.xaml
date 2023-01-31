@@ -1,0 +1,343 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1100,6984.000000000001" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="64">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="58">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1086.4,6919.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="StatusD">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">NOT APPROVED</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="Status">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">APPROVED</Literal>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="1043.2,6828" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="Uname" />
+        <Variable x:TypeArguments="sd:DataTable" Name="Data1" />
+        <Variable x:TypeArguments="x:String" Name="city" />
+        <Variable x:TypeArguments="x:String" Name="workExp" />
+        <Variable x:TypeArguments="x:Int32" Name="Age" />
+        <Variable x:TypeArguments="x:Int32" Name="CIBIL" />
+        <Variable x:TypeArguments="x:String" Name="nationality" />
+        <Variable x:TypeArguments="x:Int32" Name="Income" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="980.8,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_14" Text="[&quot;This bot is Applying for Home Loan Where Property Value is min 15 Lakh&quot;]" />
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Name" sap:VirtualizedContainerService.HintSize="980.8,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter Full Name" Title="Enter Basic Information">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[Uname]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:ReadRange AddHeaders="True" DataTable="[Data1]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="980.8,97.6" sap2010:WorkflowViewState.IdRef="ReadRange_2" Range="A1:B4" SheetName="Sheet1" WorkbookPath="C:\Users\hp\OneDrive\Documents\Bank Details.xlsx" />
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Data1]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="980.8,850.4" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+        <ui:ForEachRow.Body>
+          <ActivityAction x:TypeArguments="sd:DataRow">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="524.8,724.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="Iname" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="481.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[Iname]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[CurrentRow("Name").ToString]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <If Condition="[Iname = Uname]" sap:VirtualizedContainerService.HintSize="481.6,524" sap2010:WorkflowViewState.IdRef="If_2">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="400,258.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="356.8,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_11" Text="[&quot;USER IS VALID&quot;]" />
+                    <ui:Break sap:VirtualizedContainerService.HintSize="356.8,32" sap2010:WorkflowViewState.IdRef="Break_5" />
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="400,83.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachRow.Body>
+      </ui:ForEachRow>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="980.8,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_8" IsPassword="False" Label="Enter Age" Title="Enter Basic Information">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:Int32">[Age]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="980.8,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Enter Nationality" Title="Enter Basic Information">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[nationality]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="980.8,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Enter City" Title="Enter Basic Information">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[city]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="980.8,304.8" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="Enter Employment Status" OptionsString="1 year of work Experience;2 year of work Experience;3 year of work Experience" Title="Enter Basic Information">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[workExp]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="980.8,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_6" IsPassword="False" Label="Enter CIBIL Score" Title="Enter Basic Information">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:Int32">[CIBIL]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="980.8,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_7" IsPassword="False" Label="Enter Income" Title="Enter Basic Information">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:Int32">[Income]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="980.8,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_17" Text="[&quot;Checking Conditions on the basis of Information Provided&quot;]" />
+      <If Condition="[nationality = &quot;Indian&quot;]" sap:VirtualizedContainerService.HintSize="980.8,3314.4" sap2010:WorkflowViewState.IdRef="If_3">
+        <If.Then>
+          <Sequence sap:VirtualizedContainerService.HintSize="899.2,2788.8" sap2010:WorkflowViewState.IdRef="Sequence_23">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If Condition="[Age &gt; 23 and Age &lt; 62]" sap:VirtualizedContainerService.HintSize="856,2697.6" sap2010:WorkflowViewState.IdRef="If_4">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="774.4,2172" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If Condition="[workExp = &quot;3 year of work Experience&quot;]" sap:VirtualizedContainerService.HintSize="731.2,2080.8" sap2010:WorkflowViewState.IdRef="If_5">
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="649.6,1555.2" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If Condition="[CIBIL &gt;= 750]" sap:VirtualizedContainerService.HintSize="606.4,1464" sap2010:WorkflowViewState.IdRef="If_6">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="524.8,938.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If Condition="[Income &gt;= 25000]" sap:VirtualizedContainerService.HintSize="481.6,847.2" sap2010:WorkflowViewState.IdRef="If_7">
+                                <If.Then>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="400,321.6" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="356.8,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_15" Text="[&quot;LOAN APPROVE&quot;]" />
+                                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="356.8,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_18" Text="[&quot;Complete Details : &quot; + &#x9;vbCrLf + vbCrLf + &quot;Name : &quot; + Uname +vbCrLf +  &quot;Age : &quot; + Age.ToString + vbCrLf + &quot;Nationality : &quot; + nationality + vbCrLf + &quot;City : &quot; + city + vbCrLf + &quot;Work Experience : &quot; + workExp + vbCrLf + &quot;CIBIL Score : &quot; + CIBIL.ToString + vbCrLf + &quot;Income : &quot; + Income.ToString + vbCrLf + &quot;Loan Status : &quot;  + Status]" />
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="400,360" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="356.8,133.6" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1" Reason="Imcome is Less than Required" />
+                                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="356.8,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_19" Text="[&quot;Complete Details : &quot; + &#x9;vbCrLf + vbCrLf + &quot;Name : &quot; + Uname +vbCrLf +  &quot;Age : &quot; + Age.ToString + vbCrLf + &quot;Nationality : &quot; + nationality + vbCrLf + &quot;City : &quot; + city + vbCrLf + &quot;Work Experience : &quot; + workExp + vbCrLf + &quot;CIBIL Score : &quot; + CIBIL.ToString + vbCrLf + &quot;Income : &quot; + Income.ToString + vbCrLf + &quot;Loan Status : &quot;  + StatusD]" />
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap:VirtualizedContainerService.HintSize="400,360" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="356.8,133.6" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_2" Reason="CIBIL Score is Less than Required" />
+                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="356.8,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_20" Text="[&quot;Complete Details : &quot; + &#x9;vbCrLf + vbCrLf + &quot;Name : &quot; + Uname +vbCrLf +  &quot;Age : &quot; + Age.ToString + vbCrLf + &quot;Nationality : &quot; + nationality + vbCrLf + &quot;City : &quot; + city + vbCrLf + &quot;Work Experience : &quot; + workExp + vbCrLf + &quot;CIBIL Score : &quot; + CIBIL.ToString + vbCrLf + &quot;Income : &quot; + Income.ToString + vbCrLf + &quot;Loan Status : &quot;  + StatusD]" />
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="400,360" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="356.8,133.6" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_3" Reason="Work exp is Less than Required" />
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="356.8,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_21" Text="[&quot;Complete Details : &quot; + &#x9;vbCrLf + vbCrLf + &quot;Name : &quot; + Uname +vbCrLf +  &quot;Age : &quot; + Age.ToString + vbCrLf + &quot;Nationality : &quot; + nationality + vbCrLf + &quot;City : &quot; + city + vbCrLf + &quot;Work Experience : &quot; + workExp + vbCrLf + &quot;CIBIL Score : &quot; + CIBIL.ToString + vbCrLf + &quot;Income : &quot; + Income.ToString + vbCrLf + &quot;Loan Status : &quot;  + StatusD]" />
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="400,360" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="356.8,133.6" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_4" Reason="Age Does not meet the requirements " />
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="356.8,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_22" Text="[&quot;Complete Details : &quot; + &#x9;vbCrLf + vbCrLf + &quot;Name : &quot; + Uname +vbCrLf +  &quot;Age : &quot; + Age.ToString + vbCrLf + &quot;Nationality : &quot; + nationality + vbCrLf + &quot;City : &quot; + city + vbCrLf + &quot;Work Experience : &quot; + workExp + vbCrLf + &quot;CIBIL Score : &quot; + CIBIL.ToString + vbCrLf + &quot;Income : &quot; + Income.ToString + vbCrLf + &quot;Loan Status : &quot;  + StatusD]" />
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence sap:VirtualizedContainerService.HintSize="400,360" sap2010:WorkflowViewState.IdRef="Sequence_24">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="356.8,133.6" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_5" Reason="You need to be Indian To apply" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="356.8,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_23" Text="[&quot;Complete Details : &quot; + &#x9;vbCrLf + vbCrLf + &quot;Name : &quot; + Uname +vbCrLf +  &quot;Age : &quot; + Age.ToString + vbCrLf + &quot;Nationality : &quot; + nationality + vbCrLf + &quot;City : &quot; + city + vbCrLf + &quot;Work Experience : &quot; + workExp + vbCrLf + &quot;CIBIL Score : &quot; + CIBIL.ToString + vbCrLf + &quot;Income : &quot; + Income.ToString + vbCrLf + &quot;Loan Status : &quot;  + StatusD]" />
+          </Sequence>
+        </If.Else>
+      </If>
+    </Sequence>
+  </Sequence>
+</Activity>
